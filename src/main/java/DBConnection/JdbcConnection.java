@@ -9,9 +9,9 @@ public class JdbcConnection {
         String port = "3306";
         //url ["jdbc:mysql://" + host + ":" +  port + "/databasename" ]
 
-         Connection con = DriverManager.getConnection("jdbc:mysql://" + host + ":" +  port + "/demo","root", "root");
+        Connection con = DriverManager.getConnection("jdbc:mysql://" + host + ":" +  port + "/demo","root", "root");
 
-         Statement statement = con.createStatement();
+        Statement statement = con.createStatement();
 
         ResultSet resultSet = statement.executeQuery("select * from credentials where scenario = 'zerobalancecard'");
 
